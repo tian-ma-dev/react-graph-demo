@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+  padding-bottom: 10vh;
+}
+
+.App .App-header {
+  background-color: hsl(220, 40%, 15%);
+  min-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-bottom: 3vh;
+}
+
+.App .App-header h1 {
+  font-size: calc(15px + 4vmin);
+  text-shadow: 0 0 0.2em hsl(220, 40%, 50%);
+  margin-bottom: 0.2em;
+  font-family: 'Fira Mono Medium', sans-serif;
+  font-weight: normal;
+}
+
+.App .App-header p {
+  font-size: calc(10px + 2vmin);
+  text-shadow: 0 0 0.2em hsl(220, 40%, 50%);
+  margin: 0 auto 0 auto;
+  font-family: 'Raleway Medium', sans-serif;
+}
+
+#root {
+  background-color: hsl(220, 30%, 35%);
+  color: white;
+  font-size: calc(10px + 1vmin);
+}
+
+.App h3 {
+  font-family: 'Raleway Medium', sans-serif;
+  color: white;
+  font-weight: normal;
+  font-size: calc(10px + 2vmin);
+  margin: 0;
+  padding: 1em 0 1em 0;
+  background-color: hsl(220, 40%, 30%);
+}
+
+.App p {
+  margin: 0.5em auto 0.5em auto;
+}

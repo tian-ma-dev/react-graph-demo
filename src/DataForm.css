@@ -1,0 +1,107 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.App .Data-entry-form {
+  margin: 1.5em auto 1.5em auto;
+  line-height: 2em;
+  width: 50vw;
+}
+
+#Form-main-container {
+  display: table;
+  width: 100%;
+}
+
+#Form-sub-container {
+  display: table-row;
+  width: 100%;
+}
+
+#Form-main-container div {
+  height: 23vh;
+}
+
+#DataTextBox {
+  outline: none;
+  padding: 1em;
+  border: 3px solid hsl(200, 60%, 100%);
+  border-radius: 5px;
+  box-shadow: 0 0 15px 5px hsla(200, 60%, 10%, .2);
+  width: 100%;
+}
+
+#SubmitButton {
+  width: 100%;
+  padding: 1em;
+  border: 0;
+  border-radius: 5px;
+  background-color: hsl(220, 30%, 50%);
+  color: white;
+}
+
+#UploadButton {
+  width: 100%;
+  padding: 1em;
+  border: 0;
+  border-radius: 5px;
+  background-color: hsl(220, 30%, 50%);
+  color: white;
+  margin-top: 20px;
+}
+
+#UploadButton:hover, #SubmitButton:hover {
+  animation-name: bluebuttonhover;
+  animation-duration: .3s;
+  animation-fill-mode: both;
+}
+
+#ClearButton {
+  padding: 1em;
+  margin: 1vh auto;
+  border: 0;
+  border-radius: 5px;
+  background-color: hsl(360, 40%, 50%);
+  color: white;
+  width: 100%;
+}
+
+#ClearButton:hover {
+  animation-name: redbuttonhover;
+  animation-duration: .3s;
+  animation-fill-mode: both;
+}
+
+button {
+  font-size: .7em;
+  font-family: 'Raleway Medium', sans-serif;
+}
+
+#Form-div-1 {
+  display: table-cell;
+  padding-right: 1vw;
+  width: 23vw;
+}
+
+#Form-div-2 {
+  padding-left: 2vmin;
+  padding-right: 2vmin;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+#Form-div-3 {
+  display: table-cell;
+  padding-left: 1vw;
+  width: 23vw;
+}
+
+@keyframes bluebuttonhover {
+  from {background-color: hsl(220, 30%, 50%);}
+  to {background-color: hsl(220, 75%, 50%);}
+}
+
+@keyframes redbuttonhover {
+  from {background-color: hsl(360, 40%, 50%);}
+  to {background-color: hsl(360, 80%, 50%);}
+}

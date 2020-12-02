@@ -1,0 +1,137 @@
+#Chart-container {
+  animation-name: showchart;
+  animation-duration: .3s;
+  animation-fill-mode: both;
+}
+
+@keyframes showchart {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.Axis {
+  stroke: hsl(0, 0%, 50%);
+  stroke-width: 2px;
+  vector-effect: non-scaling-stroke;
+}
+
+#Data-graph {
+  width: 96vmin;
+  height: 54vmin;
+}
+
+#Data-graph-bg {
+  fill: hsla(0, 100%, 100%, 1);
+}
+
+#Data-graph .Data-graph-bar {
+  fill: none;
+  stroke:  hsl(220, 60%, 60%);
+  stroke-width: 10;
+}
+
+#Data-graph .Data-graph-bar:hover {
+  stroke:  hsl(0, 75%, 70%);
+}
+
+#Data-graph .Data-graph-grid {
+  stroke: hsl(0, 0%, 75%);
+  stroke-width: 1px;
+  vector-effect: non-scaling-stroke;
+}
+
+.Data-graph-grid-scale {
+  font-size: .6em;
+}
+
+#Chart-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#Chart-stats {
+  margin-left: 2vh;
+}
+
+#Stat-table {
+  background-color: hsla(0, 100%, 100%, 0.1);
+  padding: .5em;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  font-size: .8em;
+  text-align: left;
+}
+
+#Stat-table tbody tr:hover {
+  background-color: hsla(0, 100%, 100%, 0.3);
+}
+
+#Stat-table th, td {
+  padding: 0 .5em;
+  margin: 0;
+}
+
+#Mean-marker {
+  fill: hsla(0, 100%, 50%, .5);
+  stroke: none;
+}
+
+#Mean-marker:hover {
+  fill: hsla(0, 100%, 50%, 1);
+}
+
+#Median-marker {
+  fill: hsla(180, 100%, 50%, .5);
+  stroke: none;
+}
+
+#Median-marker:hover {
+  fill: hsla(180, 100%, 50%, 1);
+}
+
+.Hint {
+  display: none;
+  font-size: .7em;
+}
+
+#Mean-marker:hover + .Hint {
+  display: inline;
+  fill: hsl(0, 100%, 50%);
+}
+
+#Median-marker:hover + .Hint {
+  display: inline;
+  fill: hsl(180, 100%, 30%);
+}
+
+#Stddev-marker1 {
+  fill: hsla(200, 100%, 40%, .5);
+  stroke: none;
+}
+
+#Stddev-marker1:hover {
+  fill: hsla(200, 100%, 40%, 1);
+}
+
+#Stddev-marker1:hover + .Hint {
+  display: inline;
+  fill: hsl(200, 100%, 40%);
+}
+
+#Stddev-marker2 {
+  fill: hsla(200, 100%, 40%, .5);
+  stroke: none;
+}
+
+#Stddev-marker2:hover {
+  fill: hsla(200, 100%, 40%, 1);
+}
+
+#Stddev-marker2:hover + .Hint {
+  display: inline;
+  fill: hsl(200, 100%, 40%);
+}
